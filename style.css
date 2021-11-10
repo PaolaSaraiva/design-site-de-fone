@@ -1,0 +1,472 @@
+/* Geral */
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+}
+
+/* Inicial */
+.inicial {
+  height: 79vh;
+  background-image: url(./img/photo3.webp);
+  background-size: cover;
+}
+.titulo {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 24px;
+  margin-right: 20px;
+}
+.pagina {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0;
+  padding: 0 12px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.pagina.ativo {
+  color: #d7bfa0;
+}
+.pagina:hover {
+  color: #d7bfa0;
+}
+.logo {
+  height: 21px;
+  width: 22px;
+  margin-right: 12px;
+}
+header {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+}
+.login {
+  background-color: transparent;
+  border: none;
+  color: #d0b48f;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.login > span {
+  font-size: 15px;
+  padding: 0 10px;
+  transition: 0.2s;
+}
+.login:hover > span {
+  color: #a28d71;
+}
+.login > img {
+  height: 26px;
+  width: 26px;
+}
+nav {
+  flex: 1;
+}
+.compra {
+  height: 22px;
+  width: 27px;
+}
+.pedir {
+  background-color: #d0b48f;
+  border: none;
+  font-size: 13px;
+  padding: 7px 4px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.pedir:hover {
+  background-color: white;
+}
+.redes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+.linha {
+  border-bottom: 1px solid white;
+  width: calc(100% - 40px - 40px);
+  margin: 0 40px;
+  margin-top: 30px;
+}
+.fone {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 13px;
+}
+.frase {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 78px;
+  color: white;
+  line-height: 86px;
+  margin-bottom: 60px;
+}
+.pedir2 {
+  background-color: transparent;
+  border: 1px solid white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  color: white;
+  padding: 15px 40px;
+  width: fit-content;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.pedir2:hover {
+  background-color: white;
+  color: #a28d71;
+}
+.inicio {
+  display: flex;
+  flex-direction: column;
+  margin-top: 147px;
+  margin-left: 328px;
+}
+
+/* Beneficios */
+
+.beneficios {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./img/photo4.jpg);
+
+  height: 80vh;
+  color: white;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+}
+.titulo_do_beneficio {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.descricao_do_beneficio {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+.beneficio {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 218px;
+}
+.beneficio:nth-child(2n) {
+  margin-top: 75px;
+}
+
+.icone {
+  height: 32px;
+}
+
+.icone.ondas {
+  height: 38px;
+  width: 32px;
+}
+
+.icone.bluetooth {
+  height: 31px;
+  width: 17px;
+}
+
+.icone.raio {
+  height: 32px;
+  width: 14px;
+}
+
+.icone.fone {
+  height: 33px;
+  width: 32px;
+}
+
+/* Destaques */
+.destaques {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #ececec;
+  height: 48vh;
+  gap: 5px;
+  padding: 60px 350px;
+}
+.destaque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: calc(33.3% - 15px);
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+.anuncio_de_destaques {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+}
+
+/* Propaganda */
+
+.propaganda {
+  background-color: #e3cbaa;
+  height: 63vh;
+  display: flex;
+}
+.area_da_imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.area_do_conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+}
+.titulo_da_propaganda {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.1em;
+  color: white;
+}
+
+.descricao_da_propaganda {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  color: white;
+  line-height: 1.8em;
+  font-size: 15px;
+}
+
+/* Depoimentos */
+
+.depoimentos {
+  background-color: white;
+  position: relative;
+  height: 67vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.depoimento{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titulo_do_depoimento{
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 10px;
+}
+.linha_depoimento{
+  border-bottom: 1px solid black;
+  width: calc(100% - 550px);
+  margin: 0 50px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.texto_do_depoimento{
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 36px;
+}
+.autor_do_depoimento{
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  font-size: 18px;
+  margin-top: 80px;
+}
+.voltar{
+  width: 15px;
+  height: 29px;
+  left: 40px;
+  position: absolute;
+}
+
+.avancar{
+  width: 15px;
+  height: 29px;
+  right: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+}
+
+/* Imagem */
+
+.imagem {
+  background-image: url(./img/pikist.png);
+  filter: grayscale(0.4);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 60vh;
+}
+.overlay_de_cor {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(208, 180, 143);
+  opacity: 0.5;
+}
+
+/* Assinatura */
+
+.assinatura {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 65px;
+  background-color: #2d2d2d;
+  height: 23vh;
+}
+
+.assinatura_label {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 20px;
+  margin-right: 60px;
+}
+
+.email_para_assinatura {
+  background: transparent;
+  padding: 8px 21px;
+  border: 1px solid #d0b48f;
+  border-radius: 0;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  color: white;
+  margin-right: 10px;
+  outline: none;
+  width: 262px;
+}
+
+.email_para_assinatura::placeholder {
+  color: #d0b48f;
+}
+
+.email_para_assinatura:focus {
+  border: 3px solid #d0b48f;
+}
+
+.assinar {
+  background: #d0b48f;
+  border: 1px solid #d0b48f;
+  border-radius: 0;
+
+  padding: 8px 21px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  color: #2d2d2d;
+
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.assinar:hover {
+  background: white;
+  border: 1px solid white;
+}
+
+/* Footers */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  height: 34vh;
+}
+
+.area_de_links {
+  flex: 1;
+  background: #ececec;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 45px 25% 70px;
+}
+
+.footer_link {
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  color: #2d2d2d;
+  flex-basis: 33.3%;
+  text-decoration: none;
+}
+
+.area_de_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 96px;
+  width: 100%;
+  background: #e3e3e3;
+}
+
+.info {
+  font-family: "Barlow", sans-serif;
+  font-weight: 200;
+  color: #2d2d2d;
+  font-size: 15px;
+  line-height: 2em;
+}
+
+.tune>img{
+  width: 157px;
+  height: 64px;
+}
+
+.east>img{
+  width: 200px;
+  height: 33px;
+}
+
+.rock>img{
+  width: 200px;
+  height: 39px;
+}
+
+.instrumental>img{
+  width: 200px;
+  height: 45px;
+}
+
+.wave>img{
+  width: 160px;
+  height: 54px;
+}
